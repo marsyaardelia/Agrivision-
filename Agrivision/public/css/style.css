@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #1e3d2f;
+    --primary-hover: #142a20;
+    --accent-color: #2e7d32;
+    --accent-light: #e8f5e9;
+    --bg-light: #f8faf9;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --text-dark: #2c3e50;
+    --text-muted: #6c757d;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: #ffffff;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #15251d !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #cfd8dc !important;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+}
+
+.custom-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.hero-section {
+    background: linear-gradient(to right, #ffffff, var(--accent-light));
+    border-left: 5px solid var(--accent-color);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(46, 125, 50, 0.15);
+}
+
+.btn-agri {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-agri:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.table-custom thead {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.table-custom th {
+    font-weight: 600;
+    padding: 1rem;
+    border: none;
+}
+
+.table-custom td {
+    padding: 1rem;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+.table-custom tbody tr:nth-of-type(even) td {
+    background-color: #f9fbf9;
+}
+
+.status-badge {
+    padding: 0.5em 0.8em;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.status-pasti {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+.status-indikasi {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-konfirmasi {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #b0bec5;
+    padding: 1.5rem 0;
+}
